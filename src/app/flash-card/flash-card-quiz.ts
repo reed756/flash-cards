@@ -15,14 +15,14 @@ export class FlashCardQuiz {
   });
 
   quizCardProgressPercent = computed(() => {
-    return (100 / this.quizCardProgress().totalCards) * (this.quizCardProgress().currentCardIdx + 1) + '%';
+    return (100 / this.quizCardProgress().totalCards) * (this.quizCardProgress().currentCardIdx + 1);
   });
 
   nextQuestion() {
     if (this.quizCardProgress().currentCardIdx === (this.quizCardProgress().totalCards - 1)) return;
 
     this.quizCardProgress.update((curr) => {
-      return { ...curr, currentCardIdx: curr.currentCardIdx + 1 };
+      return { ...curr, showAnswer: false, currentCardIdx: curr.currentCardIdx + 1 };
     })
   }
 
@@ -30,7 +30,7 @@ export class FlashCardQuiz {
     if (this.quizCardProgress().currentCardIdx === 0) return;
 
     this.quizCardProgress.update((curr) => {
-      return { ...curr, currentCardIdx: curr.currentCardIdx - 1 };
+      return { ...curr, showAnswer: false, currentCardIdx: curr.currentCardIdx - 1 };
     })
   }
 

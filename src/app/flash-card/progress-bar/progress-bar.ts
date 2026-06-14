@@ -14,4 +14,10 @@ export class ProgressBar {
     const progress = this.flashCardQuiz.quizCardProgress();
     return `${progress.currentCardIdx + 1} of ${progress.totalCards}`
   });
+
+  progressBarWidth = computed(() => {
+    const percent = this.flashCardQuiz.quizCardProgressPercent();
+
+    return (4 * percent) + 'px';
+  });
 }

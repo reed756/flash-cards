@@ -1,0 +1,22 @@
+:host {
+  border: 1px solid grey;
+  border-radius: 6px;
+  height: 32px;
+  width: 500px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.progress-bar {
+  height: 32px;
+  background-color: grey;
+  border-radius: 6px;
+}

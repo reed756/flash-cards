@@ -5,25 +5,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
-p {
-  min-height: 150px;
+.p {
+  margin: 0;
+  width: 250px;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .quiz-card {
-  min-height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
   border: 1px solid grey;
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .quiz-card-text {
   background-color: whitesmoke;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
 }
 
 .flash-card-btns {
+  width: 100%;
   background-color: whitesmoke;
+  border-radius: 0 0 6px 6px;
   display: flex;
   justify-content: space-between;
+  height: 32px;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }

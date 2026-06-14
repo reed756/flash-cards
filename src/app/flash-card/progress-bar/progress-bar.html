@@ -1,4 +1,5 @@
-<div>
-  {{ flashCardQuiz.quizCardProgressPercent() }}
-  {{ progressBarTxt() }}
+<div class="progress-bar-container">
+  <div class="progress-bar" [style.width]="progressBarWidth()"></div>
+  <span>{{ flashCardQuiz.quizCardProgressPercent() + '%' }}</span>
 </div>
+<span>{{ progressBarTxt() }}</span>

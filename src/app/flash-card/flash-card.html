@@ -4,16 +4,17 @@
 
 <section class="quiz-card">
   <div class="quiz-card-text">
-    <p>
+    <p class="p">
       {{ currCardText() }}
     </p>
   </div>
 
   <div class="flash-card-btns">
     <button class="prevBtn" (click)="flashCardQuiz.prevQuestion()"
-      [disabled]="flashCardQuiz.quizCardProgress().currentCardIdx === 0">Previous</button>
+      [disabled]="flashCardQuiz.quizCardProgress().currentCardIdx === 0">&lt; Previous</button>
     <button class="toggleShowBtn" (click)="flashCardQuiz.toggleCard()">{{ showHideBtnLabel() }}</button>
     <button class="nextBtn" (click)="flashCardQuiz.nextQuestion()"
-      [disabled]="flashCardQuiz.quizCardProgress().currentCardIdx === (flashCardQuiz.quizCardProgress().totalCards - 1)">Next</button>
+      [disabled]="flashCardQuiz.quizCardProgress().currentCardIdx === (flashCardQuiz.quizCardProgress().totalCards - 1)">Next
+      &gt;</button>
   </div>
 </section>
