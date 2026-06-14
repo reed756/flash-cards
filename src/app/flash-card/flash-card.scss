@@ -1,0 +1,29 @@
+:host {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  min-height: 150px;
+}
+
+.quiz-card {
+  min-height: 300px;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+.quiz-card-text {
+  background-color: whitesmoke;
+}
+
+.flash-card-btns {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}

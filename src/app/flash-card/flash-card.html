@@ -1,0 +1,19 @@
+<h1>Flash Cards</h1>
+
+<app-progress-bar></app-progress-bar>
+
+<section class="quiz-card">
+  <div class="quiz-card-text">
+    <p>
+      {{ currCardText() }}
+    </p>
+  </div>
+
+  <div class="flash-card-btns">
+    <button class="prevBtn" (click)="flashCardQuiz.prevQuestion()"
+      [disabled]="flashCardQuiz.quizCardProgress().currentCardIdx === 0">Previous</button>
+    <button class="toggleShowBtn" (click)="flashCardQuiz.toggleCard()">{{ showHideBtnLabel() }}</button>
+    <button class="nextBtn" (click)="flashCardQuiz.nextQuestion()"
+      [disabled]="flashCardQuiz.quizCardProgress().currentCardIdx === (flashCardQuiz.quizCardProgress().totalCards - 1)">Next</button>
+  </div>
+</section>

@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FlashCard } from "./flash-card/flash-card";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FlashCard],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
