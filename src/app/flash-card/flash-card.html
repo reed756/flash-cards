@@ -1,9 +1,9 @@
-<h1>Flash Cards</h1>
+<h1 class="h1">Flash Cards</h1>
 
 <app-progress-bar></app-progress-bar>
 
 <section class="quiz-card">
-  <div class="quiz-card-text">
+  <div class="quiz-card-text" [class.spin-card]="flashCardQuiz.showHideBtnClicked()">
     <p class="p">
       {{ currCardText() }}
     </p>

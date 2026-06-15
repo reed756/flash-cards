@@ -14,6 +14,8 @@ export class FlashCardQuiz {
     showAnswer: false
   });
 
+  readonly showHideBtnClicked = signal(false);
+
   quizCardProgressPercent = computed(() => {
     return (100 / this.quizCardProgress().totalCards) * (this.quizCardProgress().currentCardIdx + 1);
   });
@@ -35,8 +37,15 @@ export class FlashCardQuiz {
   }
 
   toggleCard() {
-    this.quizCardProgress.update((curr) => {
-      return { ...curr, showAnswer: !curr.showAnswer };
-    });
+    this.showHideBtnClicked.set(true);
+    setTimeout(() => {
+      this.quizCardProgress.update((curr) => {
+        return { ...curr, showAnswer: !curr.showAnswer };
+      });
+      this.showHideBtnClicked.set(false);
+    }, 333);
+    setTimeout(() => {
+      this.showHideBtnClicked.set(false);
+    }, 1000);
   }
 }
