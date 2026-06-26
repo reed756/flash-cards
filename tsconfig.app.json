@@ -3,9 +3,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./src",
     "module": "preserve",
     "outDir": "dist/module",
+    "rootDir": "./src",
     "types": []
   },
   "include": ["src/**/*.ts"],
