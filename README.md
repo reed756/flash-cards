@@ -14,6 +14,10 @@ The goal of this project was to practice state management. The project was built
 
 - Simple navigation to cycle through the flashcards
 
+## Live URL
+
+You can see the project for yourself at https://reed756.github.io/flash-cards/
+
 ## Development server
 
 To start a local development server, run:
