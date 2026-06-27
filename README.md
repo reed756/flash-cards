@@ -4,15 +4,7 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.14.
 
-The goal of this project was to practice state management. The project was built using Angular 21 and has the following features:
-
-- Pre-defined flashcards with questions and answers
-
-- Progress bar to show the user's progress
-
-- Ability to view flashcards one at a time and flip to reveal the answer
-
-- Simple navigation to cycle through the flashcards
+The goal of this project was to practice state management in Angular and was inspired by the roadmap.sh project https://roadmap.sh/projects/flash-cards.
 
 ## Live URL
 
